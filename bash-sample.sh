@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# ECS_CONTAINER_METADATA_URI=http://169.254.170.2/v3/d9b7d1b3d7834fdfa9d4e8d3d9570447-1672267185
+# echo $ECS_CONTAINER_METADATA_URI
+
+# ECS_CONTAINER_METADATA_EXCLUDE_URL=${ECS_CONTAINER_METADATA_URI##*/}
+# echo $ECS_CONTAINER_METADATA_EXCLUDE_URL
+
+# sudo export ECS_TASK_ID=${ECS_CONTAINER_METADATA_EXCLUDE_URL%%-*}
+
+# echo $ECS_TASK_ID
+
+# export ECS_TASK_ID2=$ECS_TASK_ID
+# export ECS_TASK_ID
+
+# touch /var/log/output/${ECS_CONTAINER_METADATA_URI}_staging.log
+# source ~/.bash_profile
+
+sudo touch /var/log/output/${HOSTNAME}_staging.log

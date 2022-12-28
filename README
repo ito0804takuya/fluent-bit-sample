@@ -1,0 +1,8 @@
+docker build -t flutnt-bit-local-sample .
+
+docker run -it flutnt-bit-local-sample sh
+
+/fluent-bit/bin/fluent-bit -c /fluent-bit/etc/application.conf
+/fluent-bit/bin/fluent-bit -d -c /fluent-bit/etc/application.conf
+
+/bin/sh -c ./entrypoint.sh
